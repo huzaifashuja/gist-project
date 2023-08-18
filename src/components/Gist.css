@@ -1,0 +1,57 @@
+.avatar-image {
+  border-radius: 50%;
+  /* margin-right: 10px; */
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+}
+.profile a {
+  margin-left: 10px !important;
+}
+
+.first-line a {
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
+  margin-left: 25px;
+  color: rgb(47, 129, 247);
+}
+.first-line {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.date {
+  display: flex;
+}
+
+.date p {
+  margin-right: 20px;
+}
+
+.desc {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.desc p {
+  margin-top: 10px !important;
+}
+
+.wrapper {
+  padding-top: 10px;
+  padding-bottom: 25px;
+}
+
+.file a {
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
+  margin-right: 12px;
+  color: rgb(47, 129, 247);
+}
