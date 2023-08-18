@@ -11,6 +11,7 @@ const Search = () => {
 
   const [username, setUsername] = useState('')
   const handleChange = (e) => {
+
     if (!e.target.value) {
       dispatch(slice.actions.setSearchData([]))
       dispatch(slice.actions.setPrevUsername(''))
@@ -21,10 +22,13 @@ const Search = () => {
   }
 
   const handleSearch = (event) => {
+    dispatch(slice.actions.setPrevUsername(username))
     if (event.key === 'Enter') {
       if (username && username !== prevUsername) {
         getGistForUser(username).then((res) => {
+          console.log(res.data)
           if (res.data.length > 0) {
+            dispatch(slice.actions.setNetworkError(false))
             dispatch(slice.actions.setSearchData(res.data))
             dispatch(slice.actions.setPrevUsername(username))
           }

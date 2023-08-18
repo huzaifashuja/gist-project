@@ -29,7 +29,7 @@ function Header() {
         <Search />
       </Wrapper>
       {!networkError ?
-        <GistList data={searchData.length > 1 ? searchData : data} /> : <h1 style={{ textAlign: "center" }}>404 Not Found</h1>}
+        <GistList data={searchData.length > 0 ? searchData : data} /> : <h1 style={{ textAlign: "center" }}>404 Not Found</h1>}
     </>
   )
 }
